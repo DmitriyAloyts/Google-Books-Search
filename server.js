@@ -11,8 +11,7 @@ app.use(express.json());
 //For connecting MongoDB
 const mongoose = require("mongoose");
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/reactgooglebooks");
-
+mongoose.connect(process.env.MONGODB_URI || "mongodb://Dmitriy:Password123@ds029801.mlab.com:29801/heroku_p661f671");
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
